@@ -1,0 +1,15 @@
+//
+//  Prod.xcconfig
+//  AstraPay
+//
+//  Created by yohanes saputra on 09/06/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-AstraPay/Pods-AstraPay.release.xcconfig"
+
+BASE_URL = https:/$()/orion.astrapay.com
+SEC_PUB_KEY = @$0p9uardPy94W@$8XvnSA33HEOE38x3Zh0cqi8ZjDU1Ic#&
+EMBED_KEY = AznrcUZAgMrCmG8uMYmqw7u4

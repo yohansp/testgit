@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (5.4.3)
+  - RxSwift (6.2.0)
+  - Swinject (2.6.0)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - RxSwift
+  - Swinject (= 2.6.0)
+  - SwinjectStoryboard (= 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxSwift
+    - Swinject
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
+
+PODFILE CHECKSUM: e7f4601a1389504cbdf91d32c7f1ba8fcc99544e
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,1211 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0B111772BB7218B9B3A0A4 /* Pods_AstraPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D294979904B251CC81B752F3 /* Pods_AstraPay.framework */; };
+		150346732671B2BF00CCFDF6 /* CacheAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150346722671B2BF00CCFDF6 /* CacheAuth.swift */; };
+		151A39B7266F190300CC0A7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A39B6266F190300CC0A7B /* AppDelegate.swift */; };
+		151A39B9266F190300CC0A7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A39B8266F190300CC0A7B /* SceneDelegate.swift */; };
+		151A39BB266F190300CC0A7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A39BA266F190300CC0A7B /* ViewController.swift */; };
+		151A39BE266F190300CC0A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151A39BC266F190300CC0A7B /* Main.storyboard */; };
+		151A39C0266F190600CC0A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151A39BF266F190600CC0A7B /* Assets.xcassets */; };
+		151A39C3266F190600CC0A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151A39C1266F190600CC0A7B /* LaunchScreen.storyboard */; };
+		151A39CE266F190600CC0A7B /* AstraPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A39CD266F190600CC0A7B /* AstraPayTests.swift */; };
+		151A39D9266F190600CC0A7B /* AstraPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A39D8266F190600CC0A7B /* AstraPayUITests.swift */; };
+		151A39FB266F1F5C00CC0A7B /* EntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A39F9266F1F5C00CC0A7B /* EntranceViewController.swift */; };
+		151A39FC266F1F5C00CC0A7B /* EntranceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151A39FA266F1F5C00CC0A7B /* EntranceViewController.xib */; };
+		151A3A05266F2C3800CC0A7B /* AstraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3A04266F2C3800CC0A7B /* AstraButton.swift */; };
+		151A3A0D266F30E100CC0A7B /* EntranceModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3A0C266F30E100CC0A7B /* EntranceModelView.swift */; };
+		151A3A12266F395200CC0A7B /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151A3A11266F395200CC0A7B /* Authentication.storyboard */; };
+		151A3A17266F396900CC0A7B /* PhoneLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3A16266F396900CC0A7B /* PhoneLoginViewController.swift */; };
+		151A3A1C266F39AC00CC0A7B /* PinLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3A1B266F39AC00CC0A7B /* PinLoginViewController.swift */; };
+		151A3A2A266F4E7600CC0A7B /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3A29266F4E7600CC0A7B /* AuthRepository.swift */; };
+		151A3A33266F55A500CC0A7B /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3A32266F55A500CC0A7B /* LoginResponse.swift */; };
+		151A3AD32670B15800CC0A7B /* PhoneLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3AD22670B15800CC0A7B /* PhoneLoginViewModel.swift */; };
+		151A3AD82670B16700CC0A7B /* PinLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3AD72670B16700CC0A7B /* PinLoginViewModel.swift */; };
+		151A3B142670D40400CC0A7B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3B132670D40400CC0A7B /* Global.swift */; };
+		151A3B262670D76A00CC0A7B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A3B252670D76A00CC0A7B /* UIViewController+Extension.swift */; };
+		153C23472676E9B60066DA23 /* InputPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C23442676E9B50066DA23 /* InputPinView.swift */; };
+		153C23482676E9B60066DA23 /* InputPinVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153C23452676E9B50066DA23 /* InputPinVIew.xib */; };
+		153C23492676E9B60066DA23 /* LKPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C23462676E9B60066DA23 /* LKPinView.swift */; };
+		153C236D2676EAD00066DA23 /* LoginPinTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C236B2676EAD00066DA23 /* LoginPinTextField.swift */; };
+		153C236E2676EAD00066DA23 /* LoginPinTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153C236C2676EAD00066DA23 /* LoginPinTextField.xib */; };
+		153C237D2676EB5A0066DA23 /* InputLoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C237C2676EB5A0066DA23 /* InputLoginTextField.swift */; };
+		153C238C2676EBEA0066DA23 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C238B2676EBEA0066DA23 /* UIColor+Extension.swift */; };
+		153C23912676EE2C0066DA23 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C23902676EE2C0066DA23 /* Colors.swift */; };
+		153C23B32676F2920066DA23 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C23B22676F2920066DA23 /* UIView+Extension.swift */; };
+		157CF3422678ACA1002E6D94 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CF3412678ACA1002E6D94 /* LoginRequest.swift */; };
+		157CF3522678C041002E6D94 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CF3512678C041002E6D94 /* SHA1.swift */; };
+		157CF3A12679B8AD002E6D94 /* PopUpOTP.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157CF39F2679B8AD002E6D94 /* PopUpOTP.xib */; };
+		157CF3A22679B8AD002E6D94 /* PopUpOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CF3A02679B8AD002E6D94 /* PopUpOTP.swift */; };
+		157CF3AA2679C272002E6D94 /* APButtonAtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CF3A82679C272002E6D94 /* APButtonAtom.swift */; };
+		157CF3AB2679C272002E6D94 /* APButtonAtom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157CF3A92679C272002E6D94 /* APButtonAtom.xib */; };
+		157CF3B12679C386002E6D94 /* UILabelInterSemiBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CF3B02679C386002E6D94 /* UILabelInterSemiBold.swift */; };
+		157CF3BF2679C3C3002E6D94 /* UILabelInterLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CF3B72679C3C3002E6D94 /* UILabelInterLight.swift */; };
+		157CF3C22679C3C3002E6D94 /* UILabelInterRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CF3BA2679C3C3002E6D94 /* UILabelInterRegular.swift */; };
+		157CF3C32679C3C3002E6D94 /* UILabelInterThin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CF3BB2679C3C3002E6D94 /* UILabelInterThin.swift */; };
+		5CCC6F56F28F2FCA616393FE /* Pods_AstraPay_AstraPayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6177F53AF90B41050FB38E1C /* Pods_AstraPay_AstraPayUITests.framework */; };
+		FDFFB913CF19D677D72BE018 /* Pods_AstraPayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011BEF92D8882FF93C3A6DA7 /* Pods_AstraPayTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		151A39CA266F190600CC0A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151A39AB266F190200CC0A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151A39B2266F190300CC0A7B;
+			remoteInfo = AstraPay;
+		};
+		151A39D5266F190600CC0A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151A39AB266F190200CC0A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151A39B2266F190300CC0A7B;
+			remoteInfo = AstraPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011BEF92D8882FF93C3A6DA7 /* Pods_AstraPayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstraPayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		144820B306896849A046FC09 /* Pods-AstraPayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPayTests.release.xcconfig"; path = "Target Support Files/Pods-AstraPayTests/Pods-AstraPayTests.release.xcconfig"; sourceTree = "<group>"; };
+		150346722671B2BF00CCFDF6 /* CacheAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAuth.swift; sourceTree = "<group>"; };
+		151A39B3266F190300CC0A7B /* AstraPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstraPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		151A39B6266F190300CC0A7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		151A39B8266F190300CC0A7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		151A39BA266F190300CC0A7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		151A39BD266F190300CC0A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		151A39BF266F190600CC0A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		151A39C2266F190600CC0A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		151A39C4266F190600CC0A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151A39C9266F190600CC0A7B /* AstraPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstraPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		151A39CD266F190600CC0A7B /* AstraPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraPayTests.swift; sourceTree = "<group>"; };
+		151A39CF266F190600CC0A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151A39D4266F190600CC0A7B /* AstraPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstraPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		151A39D8266F190600CC0A7B /* AstraPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraPayUITests.swift; sourceTree = "<group>"; };
+		151A39DA266F190600CC0A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151A39F9266F1F5C00CC0A7B /* EntranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceViewController.swift; sourceTree = "<group>"; };
+		151A39FA266F1F5C00CC0A7B /* EntranceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntranceViewController.xib; sourceTree = "<group>"; };
+		151A3A04266F2C3800CC0A7B /* AstraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraButton.swift; sourceTree = "<group>"; };
+		151A3A0C266F30E100CC0A7B /* EntranceModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceModelView.swift; sourceTree = "<group>"; };
+		151A3A11266F395200CC0A7B /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		151A3A16266F396900CC0A7B /* PhoneLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginViewController.swift; sourceTree = "<group>"; };
+		151A3A1B266F39AC00CC0A7B /* PinLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLoginViewController.swift; sourceTree = "<group>"; };
+		151A3A29266F4E7600CC0A7B /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		151A3A32266F55A500CC0A7B /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		151A3A7026707DE100CC0A7B /* Sit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Sit.xcconfig; sourceTree = "<group>"; };
+		151A3A7126707F2B00CC0A7B /* Uat.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Uat.xcconfig; sourceTree = "<group>"; };
+		151A3A7226707F4E00CC0A7B /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
+		151A3AD22670B15800CC0A7B /* PhoneLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginViewModel.swift; sourceTree = "<group>"; };
+		151A3AD72670B16700CC0A7B /* PinLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLoginViewModel.swift; sourceTree = "<group>"; };
+		151A3B132670D40400CC0A7B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		151A3B252670D76A00CC0A7B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		153C23442676E9B50066DA23 /* InputPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPinView.swift; sourceTree = "<group>"; };
+		153C23452676E9B50066DA23 /* InputPinVIew.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputPinVIew.xib; sourceTree = "<group>"; };
+		153C23462676E9B60066DA23 /* LKPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPinView.swift; sourceTree = "<group>"; };
+		153C236B2676EAD00066DA23 /* LoginPinTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPinTextField.swift; sourceTree = "<group>"; };
+		153C236C2676EAD00066DA23 /* LoginPinTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPinTextField.xib; sourceTree = "<group>"; };
+		153C237C2676EB5A0066DA23 /* InputLoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputLoginTextField.swift; sourceTree = "<group>"; };
+		153C238B2676EBEA0066DA23 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		153C23902676EE2C0066DA23 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		153C23B22676F2920066DA23 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		157CF3412678ACA1002E6D94 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		157CF3512678C041002E6D94 /* SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
+		157CF39F2679B8AD002E6D94 /* PopUpOTP.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpOTP.xib; sourceTree = "<group>"; };
+		157CF3A02679B8AD002E6D94 /* PopUpOTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpOTP.swift; sourceTree = "<group>"; };
+		157CF3A82679C272002E6D94 /* APButtonAtom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButtonAtom.swift; sourceTree = "<group>"; };
+		157CF3A92679C272002E6D94 /* APButtonAtom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APButtonAtom.xib; sourceTree = "<group>"; };
+		157CF3B02679C386002E6D94 /* UILabelInterSemiBold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelInterSemiBold.swift; sourceTree = "<group>"; };
+		157CF3B72679C3C3002E6D94 /* UILabelInterLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelInterLight.swift; sourceTree = "<group>"; };
+		157CF3BA2679C3C3002E6D94 /* UILabelInterRegular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelInterRegular.swift; sourceTree = "<group>"; };
+		157CF3BB2679C3C3002E6D94 /* UILabelInterThin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelInterThin.swift; sourceTree = "<group>"; };
+		3E1C5DC0576B8E874F598E8D /* Pods-AstraPayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPayTests.debug.xcconfig"; path = "Target Support Files/Pods-AstraPayTests/Pods-AstraPayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		429EBA5E9DA63159AD65FFB1 /* Pods-AstraPayTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPayTests.staging.xcconfig"; path = "Target Support Files/Pods-AstraPayTests/Pods-AstraPayTests.staging.xcconfig"; sourceTree = "<group>"; };
+		6177F53AF90B41050FB38E1C /* Pods_AstraPay_AstraPayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstraPay_AstraPayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9445A2233DF194791FD455 /* Pods-AstraPay-AstraPayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPay-AstraPayUITests.release.xcconfig"; path = "Target Support Files/Pods-AstraPay-AstraPayUITests/Pods-AstraPay-AstraPayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6FDF071F3CA8E851820F5F7B /* Pods-AstraPay-AstraPayUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPay-AstraPayUITests.staging.xcconfig"; path = "Target Support Files/Pods-AstraPay-AstraPayUITests/Pods-AstraPay-AstraPayUITests.staging.xcconfig"; sourceTree = "<group>"; };
+		9D135C993B8098CAD3C472E3 /* Pods-AstraPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPay.debug.xcconfig"; path = "Target Support Files/Pods-AstraPay/Pods-AstraPay.debug.xcconfig"; sourceTree = "<group>"; };
+		A230AEF6320648FBC4598423 /* Pods-AstraPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPay.release.xcconfig"; path = "Target Support Files/Pods-AstraPay/Pods-AstraPay.release.xcconfig"; sourceTree = "<group>"; };
+		B077B8621423B55951A357D5 /* Pods-AstraPay.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPay.staging.xcconfig"; path = "Target Support Files/Pods-AstraPay/Pods-AstraPay.staging.xcconfig"; sourceTree = "<group>"; };
+		C4BD24C19C36D2427ADC0FA4 /* Pods-AstraPay-AstraPayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraPay-AstraPayUITests.debug.xcconfig"; path = "Target Support Files/Pods-AstraPay-AstraPayUITests/Pods-AstraPay-AstraPayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D294979904B251CC81B752F3 /* Pods_AstraPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstraPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		151A39B0266F190300CC0A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0B111772BB7218B9B3A0A4 /* Pods_AstraPay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151A39C6266F190600CC0A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFFB913CF19D677D72BE018 /* Pods_AstraPayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151A39D1266F190600CC0A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCC6F56F28F2FCA616393FE /* Pods_AstraPay_AstraPayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150346712671AC6E00CCFDF6 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				150346722671B2BF00CCFDF6 /* CacheAuth.swift */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		151A39AA266F190200CC0A7B = {
+			isa = PBXGroup;
+			children = (
+				151A3A3F266F8AC000CC0A7B /* Configuration */,
+				151A39B5266F190300CC0A7B /* AstraPay */,
+				151A39CC266F190600CC0A7B /* AstraPayTests */,
+				151A39D7266F190600CC0A7B /* AstraPayUITests */,
+				151A39B4266F190300CC0A7B /* Products */,
+				36EDA592EB6CB5B08EAD6DB5 /* Pods */,
+				EC27A2C6AEEBEE97D5A4F139 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		151A39B4266F190300CC0A7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				151A39B3266F190300CC0A7B /* AstraPay.app */,
+				151A39C9266F190600CC0A7B /* AstraPayTests.xctest */,
+				151A39D4266F190600CC0A7B /* AstraPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		151A39B5266F190300CC0A7B /* AstraPay */ = {
+			isa = PBXGroup;
+			children = (
+				151A3B122670D3F400CC0A7B /* config */,
+				151A39F1266F1B2100CC0A7B /* helpers */,
+				151A39F0266F1B0D00CC0A7B /* apps */,
+				151A39B6266F190300CC0A7B /* AppDelegate.swift */,
+				151A39B8266F190300CC0A7B /* SceneDelegate.swift */,
+				151A39BA266F190300CC0A7B /* ViewController.swift */,
+				151A39BC266F190300CC0A7B /* Main.storyboard */,
+				151A39BF266F190600CC0A7B /* Assets.xcassets */,
+				151A39C1266F190600CC0A7B /* LaunchScreen.storyboard */,
+				151A39C4266F190600CC0A7B /* Info.plist */,
+			);
+			path = AstraPay;
+			sourceTree = "<group>";
+		};
+		151A39CC266F190600CC0A7B /* AstraPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				151A39CD266F190600CC0A7B /* AstraPayTests.swift */,
+				151A39CF266F190600CC0A7B /* Info.plist */,
+			);
+			path = AstraPayTests;
+			sourceTree = "<group>";
+		};
+		151A39D7266F190600CC0A7B /* AstraPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				151A39D8266F190600CC0A7B /* AstraPayUITests.swift */,
+				151A39DA266F190600CC0A7B /* Info.plist */,
+			);
+			path = AstraPayUITests;
+			sourceTree = "<group>";
+		};
+		151A39F0266F1B0D00CC0A7B /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				151A39F4266F1B4B00CC0A7B /* paylater */,
+				151A39F3266F1B4400CC0A7B /* biller */,
+				151A39F2266F1B3600CC0A7B /* user */,
+			);
+			path = apps;
+			sourceTree = "<group>";
+		};
+		151A39F1266F1B2100CC0A7B /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				151A3A03266F2C0700CC0A7B /* ui */,
+				150346712671AC6E00CCFDF6 /* cache */,
+				151A3B102670D3AB00CC0A7B /* util */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		151A39F2266F1B3600CC0A7B /* user */ = {
+			isa = PBXGroup;
+			children = (
+				151A3A28266F4BA700CC0A7B /* repository */,
+				151A39F5266F1EAB00CC0A7B /* ui */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		151A39F3266F1B4400CC0A7B /* biller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = biller;
+			sourceTree = "<group>";
+		};
+		151A39F4266F1B4B00CC0A7B /* paylater */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = paylater;
+			sourceTree = "<group>";
+		};
+		151A39F5266F1EAB00CC0A7B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				151A39F8266F1EC700CC0A7B /* home */,
+				151A39F7266F1EC000CC0A7B /* auth */,
+				151A39F6266F1EB700CC0A7B /* entrance */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		151A39F6266F1EB700CC0A7B /* entrance */ = {
+			isa = PBXGroup;
+			children = (
+				157CF3CE267AB70F002E6D94 /* view */,
+				157CF3CF267AB716002E6D94 /* component */,
+				151A39F9266F1F5C00CC0A7B /* EntranceViewController.swift */,
+				151A3A0C266F30E100CC0A7B /* EntranceModelView.swift */,
+			);
+			path = entrance;
+			sourceTree = "<group>";
+		};
+		151A39F7266F1EC000CC0A7B /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				157CF3462678BEDE002E6D94 /* view */,
+				153C23422676E98F0066DA23 /* component */,
+				151A3A16266F396900CC0A7B /* PhoneLoginViewController.swift */,
+				151A3AD22670B15800CC0A7B /* PhoneLoginViewModel.swift */,
+				151A3A1B266F39AC00CC0A7B /* PinLoginViewController.swift */,
+				151A3AD72670B16700CC0A7B /* PinLoginViewModel.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		151A39F8266F1EC700CC0A7B /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		151A3A03266F2C0700CC0A7B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				157CF3AF2679C349002E6D94 /* uilabel */,
+				157CF3A72679C240002E6D94 /* buttonatom */,
+				157CF39E2679B86C002E6D94 /* otp */,
+				151A3A04266F2C3800CC0A7B /* AstraButton.swift */,
+				151A3B252670D76A00CC0A7B /* UIViewController+Extension.swift */,
+				153C238B2676EBEA0066DA23 /* UIColor+Extension.swift */,
+				153C23B22676F2920066DA23 /* UIView+Extension.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		151A3A28266F4BA700CC0A7B /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				151A3A31266F557F00CC0A7B /* model */,
+				151A3A29266F4E7600CC0A7B /* AuthRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		151A3A31266F557F00CC0A7B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				151A3A32266F55A500CC0A7B /* LoginResponse.swift */,
+				157CF3412678ACA1002E6D94 /* LoginRequest.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		151A3A3F266F8AC000CC0A7B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				151A3A7026707DE100CC0A7B /* Sit.xcconfig */,
+				151A3A7126707F2B00CC0A7B /* Uat.xcconfig */,
+				151A3A7226707F4E00CC0A7B /* Prod.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		151A3B102670D3AB00CC0A7B /* util */ = {
+			isa = PBXGroup;
+			children = (
+				153C23902676EE2C0066DA23 /* Colors.swift */,
+				157CF3512678C041002E6D94 /* SHA1.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		151A3B122670D3F400CC0A7B /* config */ = {
+			isa = PBXGroup;
+			children = (
+				151A3B132670D40400CC0A7B /* Global.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		153C23422676E98F0066DA23 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				153C23432676E9980066DA23 /* pinview */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		153C23432676E9980066DA23 /* pinview */ = {
+			isa = PBXGroup;
+			children = (
+				153C237C2676EB5A0066DA23 /* InputLoginTextField.swift */,
+				153C236B2676EAD00066DA23 /* LoginPinTextField.swift */,
+				153C236C2676EAD00066DA23 /* LoginPinTextField.xib */,
+				153C23442676E9B50066DA23 /* InputPinView.swift */,
+				153C23452676E9B50066DA23 /* InputPinVIew.xib */,
+				153C23462676E9B60066DA23 /* LKPinView.swift */,
+			);
+			path = pinview;
+			sourceTree = "<group>";
+		};
+		157CF3462678BEDE002E6D94 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				151A3A11266F395200CC0A7B /* Authentication.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		157CF39E2679B86C002E6D94 /* otp */ = {
+			isa = PBXGroup;
+			children = (
+				157CF3A02679B8AD002E6D94 /* PopUpOTP.swift */,
+				157CF39F2679B8AD002E6D94 /* PopUpOTP.xib */,
+			);
+			path = otp;
+			sourceTree = "<group>";
+		};
+		157CF3A72679C240002E6D94 /* buttonatom */ = {
+			isa = PBXGroup;
+			children = (
+				157CF3A82679C272002E6D94 /* APButtonAtom.swift */,
+				157CF3A92679C272002E6D94 /* APButtonAtom.xib */,
+			);
+			path = buttonatom;
+			sourceTree = "<group>";
+		};
+		157CF3AF2679C349002E6D94 /* uilabel */ = {
+			isa = PBXGroup;
+			children = (
+				157CF3B72679C3C3002E6D94 /* UILabelInterLight.swift */,
+				157CF3BA2679C3C3002E6D94 /* UILabelInterRegular.swift */,
+				157CF3BB2679C3C3002E6D94 /* UILabelInterThin.swift */,
+				157CF3B02679C386002E6D94 /* UILabelInterSemiBold.swift */,
+			);
+			path = uilabel;
+			sourceTree = "<group>";
+		};
+		157CF3CE267AB70F002E6D94 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				151A39FA266F1F5C00CC0A7B /* EntranceViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		157CF3CF267AB716002E6D94 /* component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		36EDA592EB6CB5B08EAD6DB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D135C993B8098CAD3C472E3 /* Pods-AstraPay.debug.xcconfig */,
+				A230AEF6320648FBC4598423 /* Pods-AstraPay.release.xcconfig */,
+				C4BD24C19C36D2427ADC0FA4 /* Pods-AstraPay-AstraPayUITests.debug.xcconfig */,
+				6B9445A2233DF194791FD455 /* Pods-AstraPay-AstraPayUITests.release.xcconfig */,
+				3E1C5DC0576B8E874F598E8D /* Pods-AstraPayTests.debug.xcconfig */,
+				144820B306896849A046FC09 /* Pods-AstraPayTests.release.xcconfig */,
+				B077B8621423B55951A357D5 /* Pods-AstraPay.staging.xcconfig */,
+				6FDF071F3CA8E851820F5F7B /* Pods-AstraPay-AstraPayUITests.staging.xcconfig */,
+				429EBA5E9DA63159AD65FFB1 /* Pods-AstraPayTests.staging.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC27A2C6AEEBEE97D5A4F139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D294979904B251CC81B752F3 /* Pods_AstraPay.framework */,
+				6177F53AF90B41050FB38E1C /* Pods_AstraPay_AstraPayUITests.framework */,
+				011BEF92D8882FF93C3A6DA7 /* Pods_AstraPayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		151A39B2266F190300CC0A7B /* AstraPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151A39DD266F190600CC0A7B /* Build configuration list for PBXNativeTarget "AstraPay" */;
+			buildPhases = (
+				98A87E7BCCDA5FF84EFA26EF /* [CP] Check Pods Manifest.lock */,
+				151A39AF266F190300CC0A7B /* Sources */,
+				151A39B0266F190300CC0A7B /* Frameworks */,
+				151A39B1266F190300CC0A7B /* Resources */,
+				E8D814BA6240D477AB402B5A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstraPay;
+			productName = AstraPay;
+			productReference = 151A39B3266F190300CC0A7B /* AstraPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		151A39C8266F190600CC0A7B /* AstraPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151A39E0266F190600CC0A7B /* Build configuration list for PBXNativeTarget "AstraPayTests" */;
+			buildPhases = (
+				BD7850908E8A391854344B04 /* [CP] Check Pods Manifest.lock */,
+				151A39C5266F190600CC0A7B /* Sources */,
+				151A39C6266F190600CC0A7B /* Frameworks */,
+				151A39C7266F190600CC0A7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				151A39CB266F190600CC0A7B /* PBXTargetDependency */,
+			);
+			name = AstraPayTests;
+			productName = AstraPayTests;
+			productReference = 151A39C9266F190600CC0A7B /* AstraPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		151A39D3266F190600CC0A7B /* AstraPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151A39E3266F190600CC0A7B /* Build configuration list for PBXNativeTarget "AstraPayUITests" */;
+			buildPhases = (
+				1F3204D8B73B03E80DB8B683 /* [CP] Check Pods Manifest.lock */,
+				151A39D0266F190600CC0A7B /* Sources */,
+				151A39D1266F190600CC0A7B /* Frameworks */,
+				151A39D2266F190600CC0A7B /* Resources */,
+				473C1BFF5E503B6F0DB85918 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				151A39D6266F190600CC0A7B /* PBXTargetDependency */,
+			);
+			name = AstraPayUITests;
+			productName = AstraPayUITests;
+			productReference = 151A39D4266F190600CC0A7B /* AstraPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		151A39AB266F190200CC0A7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					151A39B2266F190300CC0A7B = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					151A39C8266F190600CC0A7B = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 151A39B2266F190300CC0A7B;
+					};
+					151A39D3266F190600CC0A7B = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 151A39B2266F190300CC0A7B;
+					};
+				};
+			};
+			buildConfigurationList = 151A39AE266F190200CC0A7B /* Build configuration list for PBXProject "AstraPay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 151A39AA266F190200CC0A7B;
+			productRefGroup = 151A39B4266F190300CC0A7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				151A39B2266F190300CC0A7B /* AstraPay */,
+				151A39C8266F190600CC0A7B /* AstraPayTests */,
+				151A39D3266F190600CC0A7B /* AstraPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		151A39B1266F190300CC0A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151A39C3266F190600CC0A7B /* LaunchScreen.storyboard in Resources */,
+				151A39C0266F190600CC0A7B /* Assets.xcassets in Resources */,
+				151A39FC266F1F5C00CC0A7B /* EntranceViewController.xib in Resources */,
+				153C23482676E9B60066DA23 /* InputPinVIew.xib in Resources */,
+				157CF3A12679B8AD002E6D94 /* PopUpOTP.xib in Resources */,
+				153C236E2676EAD00066DA23 /* LoginPinTextField.xib in Resources */,
+				151A39BE266F190300CC0A7B /* Main.storyboard in Resources */,
+				157CF3AB2679C272002E6D94 /* APButtonAtom.xib in Resources */,
+				151A3A12266F395200CC0A7B /* Authentication.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151A39C7266F190600CC0A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151A39D2266F190600CC0A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F3204D8B73B03E80DB8B683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstraPay-AstraPayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		473C1BFF5E503B6F0DB85918 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstraPay-AstraPayUITests/Pods-AstraPay-AstraPayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstraPay-AstraPayUITests/Pods-AstraPay-AstraPayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AstraPay-AstraPayUITests/Pods-AstraPay-AstraPayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A87E7BCCDA5FF84EFA26EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstraPay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD7850908E8A391854344B04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstraPayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D814BA6240D477AB402B5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstraPay/Pods-AstraPay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstraPay/Pods-AstraPay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AstraPay/Pods-AstraPay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		151A39AF266F190300CC0A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153C23B32676F2920066DA23 /* UIView+Extension.swift in Sources */,
+				153C237D2676EB5A0066DA23 /* InputLoginTextField.swift in Sources */,
+				157CF3522678C041002E6D94 /* SHA1.swift in Sources */,
+				151A3A0D266F30E100CC0A7B /* EntranceModelView.swift in Sources */,
+				151A39BB266F190300CC0A7B /* ViewController.swift in Sources */,
+				151A39B7266F190300CC0A7B /* AppDelegate.swift in Sources */,
+				151A3A17266F396900CC0A7B /* PhoneLoginViewController.swift in Sources */,
+				151A3AD32670B15800CC0A7B /* PhoneLoginViewModel.swift in Sources */,
+				151A3B142670D40400CC0A7B /* Global.swift in Sources */,
+				151A3A33266F55A500CC0A7B /* LoginResponse.swift in Sources */,
+				157CF3422678ACA1002E6D94 /* LoginRequest.swift in Sources */,
+				151A3AD82670B16700CC0A7B /* PinLoginViewModel.swift in Sources */,
+				157CF3A22679B8AD002E6D94 /* PopUpOTP.swift in Sources */,
+				157CF3B12679C386002E6D94 /* UILabelInterSemiBold.swift in Sources */,
+				150346732671B2BF00CCFDF6 /* CacheAuth.swift in Sources */,
+				153C23912676EE2C0066DA23 /* Colors.swift in Sources */,
+				157CF3BF2679C3C3002E6D94 /* UILabelInterLight.swift in Sources */,
+				153C236D2676EAD00066DA23 /* LoginPinTextField.swift in Sources */,
+				151A3B262670D76A00CC0A7B /* UIViewController+Extension.swift in Sources */,
+				151A3A05266F2C3800CC0A7B /* AstraButton.swift in Sources */,
+				151A39FB266F1F5C00CC0A7B /* EntranceViewController.swift in Sources */,
+				151A3A2A266F4E7600CC0A7B /* AuthRepository.swift in Sources */,
+				151A3A1C266F39AC00CC0A7B /* PinLoginViewController.swift in Sources */,
+				157CF3AA2679C272002E6D94 /* APButtonAtom.swift in Sources */,
+				157CF3C22679C3C3002E6D94 /* UILabelInterRegular.swift in Sources */,
+				151A39B9266F190300CC0A7B /* SceneDelegate.swift in Sources */,
+				157CF3C32679C3C3002E6D94 /* UILabelInterThin.swift in Sources */,
+				153C238C2676EBEA0066DA23 /* UIColor+Extension.swift in Sources */,
+				153C23472676E9B60066DA23 /* InputPinView.swift in Sources */,
+				153C23492676E9B60066DA23 /* LKPinView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151A39C5266F190600CC0A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151A39CE266F190600CC0A7B /* AstraPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151A39D0266F190600CC0A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151A39D9266F190600CC0A7B /* AstraPayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		151A39CB266F190600CC0A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 151A39B2266F190300CC0A7B /* AstraPay */;
+			targetProxy = 151A39CA266F190600CC0A7B /* PBXContainerItemProxy */;
+		};
+		151A39D6266F190600CC0A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 151A39B2266F190300CC0A7B /* AstraPay */;
+			targetProxy = 151A39D5266F190600CC0A7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		151A39BC266F190300CC0A7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				151A39BD266F190300CC0A7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		151A39C1266F190600CC0A7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				151A39C2266F190600CC0A7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		151A39DB266F190600CC0A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		151A39DC266F190600CC0A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		151A39DE266F190600CC0A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151A3A7026707DE100CC0A7B /* Sit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		151A39DF266F190600CC0A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151A3A7226707F4E00CC0A7B /* Prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		151A39E1266F190600CC0A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1C5DC0576B8E874F598E8D /* Pods-AstraPayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstraPay.app/AstraPay";
+			};
+			name = Debug;
+		};
+		151A39E2266F190600CC0A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 144820B306896849A046FC09 /* Pods-AstraPayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstraPay.app/AstraPay";
+			};
+			name = Release;
+		};
+		151A39E4266F190600CC0A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4BD24C19C36D2427ADC0FA4 /* Pods-AstraPay-AstraPayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstraPay;
+			};
+			name = Debug;
+		};
+		151A39E5266F190600CC0A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9445A2233DF194791FD455 /* Pods-AstraPay-AstraPayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstraPay;
+			};
+			name = Release;
+		};
+		151A3A5E266F8D1E00CC0A7B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		151A3A5F266F8D1E00CC0A7B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151A3A7026707DE100CC0A7B /* Sit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		151A3A60266F8D1E00CC0A7B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429EBA5E9DA63159AD65FFB1 /* Pods-AstraPayTests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstraPay.app/AstraPay";
+			};
+			name = Staging;
+		};
+		151A3A61266F8D1E00CC0A7B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FDF071F3CA8E851820F5F7B /* Pods-AstraPay-AstraPayUITests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstraPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astrapay.AstraPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstraPay;
+			};
+			name = Staging;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		151A39AE266F190200CC0A7B /* Build configuration list for PBXProject "AstraPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151A39DB266F190600CC0A7B /* Debug */,
+				151A3A5E266F8D1E00CC0A7B /* Staging */,
+				151A39DC266F190600CC0A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151A39DD266F190600CC0A7B /* Build configuration list for PBXNativeTarget "AstraPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151A39DE266F190600CC0A7B /* Debug */,
+				151A3A5F266F8D1E00CC0A7B /* Staging */,
+				151A39DF266F190600CC0A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151A39E0266F190600CC0A7B /* Build configuration list for PBXNativeTarget "AstraPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151A39E1266F190600CC0A7B /* Debug */,
+				151A3A60266F8D1E00CC0A7B /* Staging */,
+				151A39E2266F190600CC0A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151A39E3266F190600CC0A7B /* Build configuration list for PBXNativeTarget "AstraPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151A39E4266F190600CC0A7B /* Debug */,
+				151A3A61266F8D1E00CC0A7B /* Staging */,
+				151A39E5266F190600CC0A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 151A39AB266F190200CC0A7B /* Project object */;
+}

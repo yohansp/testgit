@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginPinTextField" customModule="astrapay" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="N10-HW-Drf" id="kyT-WZ-TBS"/>
+                <outlet property="viewPlaceholder" destination="d9e-II-Tlh" id="WxO-F8-Spj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="loginPinTextFieldIdentifier" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpU-jX-XUi">
+                    <rect key="frame" x="0.0" y="44" width="80" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-II-Tlh">
+                            <rect key="frame" x="12" y="12" width="56" height="56"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N10-HW-Drf" customClass="InputLoginTextField" customModule="astrapay" customModuleProvider="target">
+                            <rect key="frame" x="12" y="12" width="56" height="56"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="N10-HW-Drf" firstAttribute="height" secondItem="d9e-II-Tlh" secondAttribute="height" id="86F-Dt-vMl"/>
+                        <constraint firstItem="N10-HW-Drf" firstAttribute="centerY" secondItem="d9e-II-Tlh" secondAttribute="centerY" id="9OH-yJ-7Ie"/>
+                        <constraint firstItem="d9e-II-Tlh" firstAttribute="centerX" secondItem="NpU-jX-XUi" secondAttribute="centerX" id="DeW-V8-628"/>
+                        <constraint firstItem="N10-HW-Drf" firstAttribute="width" secondItem="d9e-II-Tlh" secondAttribute="width" id="Esf-1Z-dBw"/>
+                        <constraint firstItem="N10-HW-Drf" firstAttribute="centerX" secondItem="d9e-II-Tlh" secondAttribute="centerX" id="O37-LO-QNr"/>
+                        <constraint firstItem="d9e-II-Tlh" firstAttribute="height" secondItem="NpU-jX-XUi" secondAttribute="height" multiplier="0.7" id="SIS-mJ-Dgy"/>
+                        <constraint firstItem="d9e-II-Tlh" firstAttribute="width" secondItem="NpU-jX-XUi" secondAttribute="width" multiplier="0.7" id="kAg-pZ-xGr"/>
+                        <constraint firstItem="d9e-II-Tlh" firstAttribute="centerY" secondItem="NpU-jX-XUi" secondAttribute="centerY" id="ymv-4Y-dzQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="NpU-jX-XUi" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="P0V-15-leG"/>
+                <constraint firstItem="NpU-jX-XUi" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" id="YUG-T0-glD"/>
+                <constraint firstItem="NpU-jX-XUi" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="a72-pH-4PN"/>
+                <constraint firstItem="NpU-jX-XUi" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ujv-MB-mh3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </view>
+    </objects>
+</document>

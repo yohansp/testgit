@@ -1,0 +1,6 @@
+framework module Pods_AstraPayTests {
+  umbrella header "Pods-AstraPayTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

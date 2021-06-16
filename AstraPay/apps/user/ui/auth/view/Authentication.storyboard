@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Phone Login View Controller-->
+        <scene sceneID="PX3-YR-wTd">
+            <objects>
+                <viewController storyboardIdentifier="phoneLoginViewController" id="KF1-Dj-obK" customClass="PhoneLoginViewController" customModule="AstraPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ZT-y2-Pre">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="astrapay_logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="60K-m8-P6p">
+                                <rect key="frame" x="73.5" y="86" width="267" height="208"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-Dl-e5L" customClass="AstraButton" customModule="AstraPay" customModuleProvider="target">
+                                <rect key="frame" x="20" y="771" width="374" height="59"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onLogin:" destination="KF1-Dj-obK" eventType="touchUpInside" id="i5T-Vk-UF9"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSi-SU-Ivu">
+                                <rect key="frame" x="77.5" y="440" width="259" height="72"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="No Handphone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfK-Dy-8Fb">
+                                        <rect key="frame" x="62" y="21" width="188" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJH-ps-0Js">
+                                        <rect key="frame" x="20" y="21" width="40" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number. If the number is not registered, you will be taken to the registration page." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioA-Lt-XZX">
+                                <rect key="frame" x="57.5" y="302" width="299" height="115"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aBI-eO-PyA"/>
+                        <color key="backgroundColor" name="default_color"/>
+                        <constraints>
+                            <constraint firstItem="cZo-Dl-e5L" firstAttribute="centerX" secondItem="0ZT-y2-Pre" secondAttribute="centerX" id="Alr-01-lIt"/>
+                            <constraint firstItem="ioA-Lt-XZX" firstAttribute="centerX" secondItem="0ZT-y2-Pre" secondAttribute="centerX" id="B2c-od-35L"/>
+                            <constraint firstItem="cZo-Dl-e5L" firstAttribute="width" secondItem="0ZT-y2-Pre" secondAttribute="width" multiplier="0.903382" id="Bes-rx-YSc"/>
+                            <constraint firstItem="cSi-SU-Ivu" firstAttribute="height" secondItem="0ZT-y2-Pre" secondAttribute="height" multiplier="0.0803571" id="DNg-Sx-ybe"/>
+                            <constraint firstItem="cZo-Dl-e5L" firstAttribute="height" secondItem="0ZT-y2-Pre" secondAttribute="height" multiplier="0.0613839" constant="4.0000256000000007" id="FMM-qJ-LoA"/>
+                            <constraint firstItem="aBI-eO-PyA" firstAttribute="bottom" secondItem="cZo-Dl-e5L" secondAttribute="bottom" constant="32" id="Ijx-pZ-XOe"/>
+                            <constraint firstItem="cSi-SU-Ivu" firstAttribute="width" secondItem="0ZT-y2-Pre" secondAttribute="width" multiplier="0.625604" id="KRl-Be-gHe"/>
+                            <constraint firstItem="60K-m8-P6p" firstAttribute="top" secondItem="aBI-eO-PyA" secondAttribute="top" constant="42" id="QYB-NU-lWw"/>
+                            <constraint firstItem="cSi-SU-Ivu" firstAttribute="centerX" secondItem="0ZT-y2-Pre" secondAttribute="centerX" id="SHK-Ab-Cpm"/>
+                            <constraint firstItem="60K-m8-P6p" firstAttribute="centerX" secondItem="aBI-eO-PyA" secondAttribute="centerX" id="Tnr-bO-3AC"/>
+                            <constraint firstItem="ioA-Lt-XZX" firstAttribute="height" secondItem="0ZT-y2-Pre" secondAttribute="height" multiplier="0.100446" constant="25" id="YuT-g5-rtB"/>
+                            <constraint firstItem="ioA-Lt-XZX" firstAttribute="width" secondItem="0ZT-y2-Pre" secondAttribute="width" multiplier="0.7657" constant="-17.999799999999993" id="bpg-3f-Lbc"/>
+                            <constraint firstItem="60K-m8-P6p" firstAttribute="height" secondItem="0ZT-y2-Pre" secondAttribute="height" multiplier="0.232143" id="dUM-LS-M8l"/>
+                            <constraint firstItem="ioA-Lt-XZX" firstAttribute="top" secondItem="60K-m8-P6p" secondAttribute="bottom" constant="8" id="pDC-R1-9ee"/>
+                            <constraint firstItem="cSi-SU-Ivu" firstAttribute="top" secondItem="ioA-Lt-XZX" secondAttribute="bottom" constant="23" id="t0H-qt-Tes"/>
+                            <constraint firstItem="60K-m8-P6p" firstAttribute="width" secondItem="0ZT-y2-Pre" secondAttribute="width" multiplier="0.644928" id="uTv-ch-AoN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="d6R-R6-l6i"/>
+                    <connections>
+                        <outlet property="inputPhone" destination="tfK-Dy-8Fb" id="7Qw-Rc-qUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9b-HA-8iI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613.04347826086962" y="-173.4375"/>
+        </scene>
+        <!--Pin Login View Controller-->
+        <scene sceneID="qmz-oa-0Bf">
+            <objects>
+                <viewController storyboardIdentifier="pinLoginViewController" id="F27-Qh-wf5" customClass="PinLoginViewController" customModule="AstraPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PAE-Tw-EMm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan masukan PIN Anda" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIk-Jx-gjT">
+                                <rect key="frame" x="101.5" y="297" width="211" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Q6J-WV-I7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-nd-58M" customClass="LKPINView" customModule="AstraPay" customModuleProvider="target">
+                                <rect key="frame" x="87" y="338" width="240" height="68"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lba-2p-rO3" customClass="AstraButton" customModule="AstraPay" customModuleProvider="target">
+                                <rect key="frame" x="20" y="772" width="374" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="0jq-F3-QxM"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onLogin:" destination="KF1-Dj-obK" eventType="touchUpInside" id="36t-oB-jVl"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="astrapay_logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-a8-Rto">
+                                <rect key="frame" x="89" y="89" width="236" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YJV-TD-ow5"/>
+                        <color key="backgroundColor" name="default_color"/>
+                        <constraints>
+                            <constraint firstItem="hbr-nd-58M" firstAttribute="height" secondItem="PAE-Tw-EMm" secondAttribute="height" multiplier="0.0758929" id="2EM-uD-PKq"/>
+                            <constraint firstItem="Lba-2p-rO3" firstAttribute="width" secondItem="PAE-Tw-EMm" secondAttribute="width" multiplier="0.903382" id="Gml-if-WfB"/>
+                            <constraint firstItem="z1y-a8-Rto" firstAttribute="height" secondItem="PAE-Tw-EMm" secondAttribute="height" multiplier="0.223214" id="IAg-9c-d1l"/>
+                            <constraint firstItem="z1y-a8-Rto" firstAttribute="width" secondItem="PAE-Tw-EMm" secondAttribute="width" multiplier="0.570048" id="OtP-Tl-hvm"/>
+                            <constraint firstItem="hbr-nd-58M" firstAttribute="centerX" secondItem="PAE-Tw-EMm" secondAttribute="centerX" id="WIj-qq-gVH"/>
+                            <constraint firstItem="HIk-Jx-gjT" firstAttribute="top" secondItem="z1y-a8-Rto" secondAttribute="bottom" constant="8" symbolic="YES" id="bNp-Ll-Ury"/>
+                            <constraint firstItem="Lba-2p-rO3" firstAttribute="centerX" secondItem="PAE-Tw-EMm" secondAttribute="centerX" id="hbv-e4-fct"/>
+                            <constraint firstItem="z1y-a8-Rto" firstAttribute="centerX" secondItem="PAE-Tw-EMm" secondAttribute="centerX" id="lyw-vq-leo"/>
+                            <constraint firstItem="Lba-2p-rO3" firstAttribute="leading" secondItem="PAE-Tw-EMm" secondAttribute="leadingMargin" id="p2L-vX-y3V"/>
+                            <constraint firstItem="hbr-nd-58M" firstAttribute="top" secondItem="HIk-Jx-gjT" secondAttribute="bottom" constant="-5" id="pOd-Mk-to0"/>
+                            <constraint firstItem="HIk-Jx-gjT" firstAttribute="centerX" secondItem="z1y-a8-Rto" secondAttribute="centerX" id="pd3-h8-ZnI"/>
+                            <constraint firstItem="hbr-nd-58M" firstAttribute="width" secondItem="PAE-Tw-EMm" secondAttribute="width" multiplier="0.57971" id="sFL-y4-BY7"/>
+                            <constraint firstItem="YJV-TD-ow5" firstAttribute="bottom" secondItem="Lba-2p-rO3" secondAttribute="bottom" constant="31" id="yLI-eG-jdE"/>
+                            <constraint firstItem="Lba-2p-rO3" firstAttribute="height" secondItem="PAE-Tw-EMm" secondAttribute="height" multiplier="0.0613839" constant="4" id="yiy-om-Iwo"/>
+                            <constraint firstItem="z1y-a8-Rto" firstAttribute="top" secondItem="YJV-TD-ow5" secondAttribute="top" constant="45" id="z4S-vr-c2N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pinView" destination="hbr-nd-58M" id="8Tn-uU-BVx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNK-Ma-hBz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186.95652173913044" y="-173.4375"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Lba-2p-rO3">
+            <size key="intrinsicContentSize" width="38" height="30"/>
+        </designable>
+        <designable name="cZo-Dl-e5L">
+            <size key="intrinsicContentSize" width="38" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="astrapay_logo_splash" width="624" height="624"/>
+        <namedColor name="default_color">
+            <color red="0.0" green="0.27058823529411763" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

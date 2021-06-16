@@ -1,0 +1,15 @@
+//
+//  Sit.xcconfig
+//  AstraPay
+//
+//  Created by yohanes saputra on 09/06/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-AstraPay/Pods-AstraPay.debug.xcconfig"
+
+BASE_URL = https:/$()/cygnus.astrapay.com
+SEC_PUB_KEY = %@$jx54Fg358+Dl9KRuXrYQhj41inxR6Btbm21CkNasRPs#&
+EMBED_KEY = AznrcUZAgMrCmG8uMYmqw7u4

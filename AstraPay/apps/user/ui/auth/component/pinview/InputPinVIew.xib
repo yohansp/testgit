@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputPinView" customModule="astrapay" customModuleProvider="target">
+            <connections>
+                <outlet property="inputFive" destination="CYR-Ij-GlZ" id="M4p-Qp-5gt"/>
+                <outlet property="inputFour" destination="jUH-DE-IJq" id="4lQ-Jq-prt"/>
+                <outlet property="inputOne" destination="Mn1-x8-thQ" id="NLX-tF-BLG"/>
+                <outlet property="inputSixth" destination="kmz-JS-pSw" id="9fi-Ap-3U6"/>
+                <outlet property="inputThree" destination="Goj-9a-jTm" id="bFI-yO-ckT"/>
+                <outlet property="inputTwo" destination="W45-eg-cqZ" id="TZT-PZ-QUU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="inputPinViewIdentifier" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nr8-py-jld">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mn1-x8-thQ" userLabel="inptOne" customClass="LoginPinTextField" customModule="astrapay" customModuleProvider="target">
+                            <rect key="frame" x="5" y="20.5" width="59" height="59"/>
+                            <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Mn1-x8-thQ" secondAttribute="height" multiplier="1:1" id="aE1-Kw-PhS"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W45-eg-cqZ" userLabel="inptTwo" customClass="LoginPinTextField" customModule="astrapay" customModuleProvider="target">
+                            <rect key="frame" x="74" y="20.5" width="58.5" height="59"/>
+                            <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Goj-9a-jTm" userLabel="inptThree" customClass="LoginPinTextField" customModule="astrapay" customModuleProvider="target">
+                            <rect key="frame" x="142.5" y="20.5" width="59" height="59"/>
+                            <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8E2-8f-WF7" userLabel="separator">
+                            <rect key="frame" x="206.5" y="0.0" width="1" height="128"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="PVk-SL-TWq"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUH-DE-IJq" userLabel="inptFour" customClass="LoginPinTextField" customModule="astrapay" customModuleProvider="target">
+                            <rect key="frame" x="212.5" y="20.5" width="59" height="59"/>
+                            <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYR-Ij-GlZ" userLabel="inptFive" customClass="LoginPinTextField" customModule="astrapay" customModuleProvider="target">
+                            <rect key="frame" x="281.5" y="20.5" width="58.5" height="59"/>
+                            <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmz-JS-pSw" userLabel="inptSix" customClass="LoginPinTextField" customModule="astrapay" customModuleProvider="target">
+                            <rect key="frame" x="350" y="20.5" width="59" height="59"/>
+                            <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="kmz-JS-pSw" firstAttribute="height" secondItem="CYR-Ij-GlZ" secondAttribute="height" id="BAc-BT-96I"/>
+                        <constraint firstItem="kmz-JS-pSw" firstAttribute="centerY" secondItem="CYR-Ij-GlZ" secondAttribute="centerY" id="E2f-Ha-KMZ"/>
+                        <constraint firstItem="jUH-DE-IJq" firstAttribute="width" secondItem="Goj-9a-jTm" secondAttribute="width" id="Fwg-0G-qHr"/>
+                        <constraint firstItem="kmz-JS-pSw" firstAttribute="width" secondItem="CYR-Ij-GlZ" secondAttribute="width" id="GM1-g9-rNM"/>
+                        <constraint firstItem="W45-eg-cqZ" firstAttribute="width" secondItem="Mn1-x8-thQ" secondAttribute="width" id="K0B-cH-heY"/>
+                        <constraint firstItem="W45-eg-cqZ" firstAttribute="height" secondItem="Mn1-x8-thQ" secondAttribute="height" id="Ooz-rK-HMc"/>
+                        <constraint firstItem="CYR-Ij-GlZ" firstAttribute="width" secondItem="jUH-DE-IJq" secondAttribute="width" id="Ovh-76-J8s"/>
+                        <constraint firstItem="Mn1-x8-thQ" firstAttribute="width" secondItem="nr8-py-jld" secondAttribute="height" multiplier="1:1.7" id="P9D-hu-OFC"/>
+                        <constraint firstItem="Mn1-x8-thQ" firstAttribute="centerY" secondItem="W45-eg-cqZ" secondAttribute="centerY" id="Qrg-uC-0N1"/>
+                        <constraint firstItem="Goj-9a-jTm" firstAttribute="leading" secondItem="W45-eg-cqZ" secondAttribute="trailing" constant="10" id="SWt-1x-JZI"/>
+                        <constraint firstItem="CYR-Ij-GlZ" firstAttribute="centerY" secondItem="jUH-DE-IJq" secondAttribute="centerY" id="Srw-L5-o7Q"/>
+                        <constraint firstItem="kmz-JS-pSw" firstAttribute="leading" secondItem="CYR-Ij-GlZ" secondAttribute="trailing" constant="10" id="TDU-eW-ch5"/>
+                        <constraint firstItem="Goj-9a-jTm" firstAttribute="height" secondItem="W45-eg-cqZ" secondAttribute="height" id="UN3-Em-jaX"/>
+                        <constraint firstItem="8E2-8f-WF7" firstAttribute="leading" secondItem="Goj-9a-jTm" secondAttribute="trailing" constant="5" id="UZQ-0N-FG4"/>
+                        <constraint firstItem="jUH-DE-IJq" firstAttribute="height" secondItem="Goj-9a-jTm" secondAttribute="height" id="WYD-pn-dbX"/>
+                        <constraint firstItem="CYR-Ij-GlZ" firstAttribute="height" secondItem="jUH-DE-IJq" secondAttribute="height" id="XLA-v5-05n"/>
+                        <constraint firstItem="W45-eg-cqZ" firstAttribute="centerY" secondItem="Goj-9a-jTm" secondAttribute="centerY" id="fWS-Ra-WJD"/>
+                        <constraint firstItem="8E2-8f-WF7" firstAttribute="centerX" secondItem="nr8-py-jld" secondAttribute="centerX" id="gLS-v6-5u5"/>
+                        <constraint firstItem="jUH-DE-IJq" firstAttribute="centerY" secondItem="Goj-9a-jTm" secondAttribute="centerY" id="gOU-Ib-43V"/>
+                        <constraint firstItem="8E2-8f-WF7" firstAttribute="top" secondItem="nr8-py-jld" secondAttribute="top" id="m3R-Fp-YOB"/>
+                        <constraint firstItem="jUH-DE-IJq" firstAttribute="leading" secondItem="8E2-8f-WF7" secondAttribute="trailing" constant="5" id="mMZ-Vi-icx"/>
+                        <constraint firstItem="Goj-9a-jTm" firstAttribute="centerY" secondItem="nr8-py-jld" secondAttribute="centerY" id="oEe-N9-8zW"/>
+                        <constraint firstItem="W45-eg-cqZ" firstAttribute="leading" secondItem="Mn1-x8-thQ" secondAttribute="trailing" constant="10" id="tpc-OU-bTt"/>
+                        <constraint firstItem="CYR-Ij-GlZ" firstAttribute="leading" secondItem="jUH-DE-IJq" secondAttribute="trailing" constant="10" id="wRY-VA-cTJ"/>
+                        <constraint firstItem="8E2-8f-WF7" firstAttribute="height" secondItem="nr8-py-jld" secondAttribute="height" multiplier="1.28" id="x3r-GD-R0y"/>
+                        <constraint firstItem="Goj-9a-jTm" firstAttribute="width" secondItem="W45-eg-cqZ" secondAttribute="width" id="zMr-Ur-gUL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="nr8-py-jld" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="DFz-mA-32u"/>
+                <constraint firstItem="nr8-py-jld" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="MA1-6O-Gv7"/>
+                <constraint firstItem="nr8-py-jld" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" id="WRT-eL-so9"/>
+                <constraint firstItem="nr8-py-jld" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="fOW-eX-ccb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="108"/>
+        </view>
+    </objects>
+</document>
